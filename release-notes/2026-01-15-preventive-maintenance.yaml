@@ -1,0 +1,50 @@
+# Release Note: Preventive Maintenance Scheduling
+# Submitted: 2026-01-15
+# Engineer: Tero Engineering
+
+feature_name: "Preventive Maintenance Scheduling"
+release_version: "2026.1"
+user_role: "fleet_manager"
+screens_affected:
+  - "Maintenance/Jobs"
+  - "Maintenance/Calendar"
+  - "Maintenance/Schedules"
+what_changed: |
+  Tero.Ops now supports structured preventive maintenance scheduling across four
+  job occurrence types: ONE_OFF (single event), TIME_BASED (fixed calendar
+  interval), METER_BASED (triggered by engine hours, fuel consumption, or any
+  other meter threshold), and WHICHEVER_HAPPENS_FIRST (calendar or meter,
+  whichever is reached sooner). When a job is marked complete, the system
+  automatically calculates and creates the next occurrence — there is no manual
+  rescheduling step. Fleet managers can view all upcoming jobs in a calendar view
+  filtered by vessel, system, or responsible party, and schedule definitions can
+  be templated and reused across sister vessels.
+user_impact: |
+  Fleet managers no longer need to track maintenance intervals manually or rely
+  on individual engineers to remember when the next 500-hour service is due.
+  The system owns the schedule and surfaces upcoming work before it becomes
+  overdue. Meter-based triggers are especially important for fishing vessels
+  where sea time varies — an engine on a 72-hour trip accumulates hours at a
+  different rate than expected, and WHICHEVER_HAPPENS_FIRST ensures the job fires
+  at the correct threshold regardless. Automatic next-occurrence generation
+  removes an entire category of scheduling errors and ensures nothing slips
+  between completed jobs.
+where_in_system: "Maintenance > Jobs, Maintenance > Calendar, and Maintenance > Schedules"
+required_user_actions: "None — feature is enabled by default. Create schedule definitions in Maintenance > Schedules and assign them to assets in the Equipment Tree."
+marketing_angle: |
+  Fishing vessels that miss a scheduled maintenance window face unplanned
+  downtime, costly emergency repairs, and potential detainment. Tero.Ops
+  preventive maintenance scheduling means every job — whether it is due in 30
+  days or after 250 more engine hours — is tracked automatically. Fleet operators
+  report moving from reactive to proactive maintenance within the first season,
+  reducing unplanned breakdowns and lowering overall maintenance cost per vessel.
+  The calendar view gives technical managers a fleet-wide picture of upcoming
+  work so they can plan dry-dock periods and crew availability well in advance.
+meta_block:
+  complexity: major
+  content_types:
+    - kb
+    - training
+    - tooltip
+    - marketing
+  industry_relevance_score: 10

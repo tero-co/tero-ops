@@ -1,0 +1,41 @@
+# Release Note: Crew Certification Tracker
+# Submitted: 2026-03-20
+# Engineer: Tero Engineering
+# Purpose: TEST FILE for pipeline validation
+
+feature_name: "Crew Certification Tracker"
+release_version: "2026.7"
+user_role: "compliance_officer"
+screens_affected:
+  - "Crew/Certifications"
+  - "Crew/Certifications/Expiring"
+  - "Reports/Compliance"
+what_changed: |
+  New certification management module that tracks all crew qualifications,
+  licenses, and training records. Automatic expiry warnings at 90, 60,
+  and 30 days before a certificate expires. Compliance dashboard shows
+  fleet-wide certification status with red/amber/green indicators.
+  Supports ISM Code, STCW, and Icelandic Maritime Administration
+  requirements.
+user_impact: |
+  Compliance officers no longer need to maintain separate spreadsheets
+  for crew certifications. The system automatically flags expiring
+  certificates and generates reports for port state inspections.
+  Vessel masters can see their crew's certification status before
+  departure — preventing delays from missing documents.
+where_in_system: "Crew > Certifications, and Reports > Compliance"
+required_user_actions: "Import existing crew data via Settings > Import > Crew CSV"
+marketing_angle: |
+  Eliminates the number one cause of port detention for Icelandic
+  vessels — missing or expired crew certificates. Automated tracking
+  means zero surprises during inspections. Particularly valuable for
+  companies with seasonal crew rotation in the fishing industry.
+meta_block:
+  complexity: major
+  content_types:
+    - kb
+    - training
+    - support_qa
+    - tooltip
+    - marketing
+  industry_relevance_score: 9

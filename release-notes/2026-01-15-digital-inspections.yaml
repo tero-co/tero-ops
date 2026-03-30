@@ -1,0 +1,52 @@
+# Release Note: Digital Vessel Inspections
+# Submitted: 2026-01-15
+# Engineer: Tero Engineering
+
+feature_name: "Digital Vessel Inspections"
+release_version: "2026.1"
+user_role: "compliance_officer"
+screens_affected:
+  - "Inspections/Checklists"
+  - "Inspections/Reports"
+what_changed: |
+  Tero.Ops now includes a full digital inspection module (v2.0) that replaces
+  paper-based vessel inspection checklists with structured, mobile-first forms
+  completed on phones or tablets. The module supports offline operation, so
+  inspections can be conducted anywhere on the vessel — engine room, cargo hold,
+  bridge — without requiring a network connection. Each checklist item supports
+  photo attachment with automatic timestamping and geolocation, creating
+  irrefutable evidence of condition at the time of inspection. Deficiencies
+  identified during an inspection automatically generate follow-up tasks in the
+  maintenance workflow, with a responsibility matrix (v2.0) defining who is
+  accountable for resolution at each severity level. All completed inspections
+  are stored as audit-ready records with full version history.
+user_impact: |
+  Compliance officers conducting ISM Code and Samgöngustofa inspections no
+  longer transcribe paper findings into a digital system after the fact — the
+  record is created at the point of inspection. Photo evidence with embedded
+  timestamps and GPS coordinates is attached directly to the finding, removing
+  ambiguity about what was observed and when. The automatic link from deficiency
+  to follow-up maintenance task closes the loop between inspection and
+  remediation, making it easy to demonstrate corrective action to auditors.
+  The responsibility matrix ensures every finding is routed to the right person
+  without manual triage, and audit-ready reports can be generated in one click
+  for port state control or internal audits.
+where_in_system: "Inspections > Checklists, and Inspections > Reports"
+required_user_actions: "None — feature is enabled by default. Build or import checklist templates in Inspections > Checklists > Templates before conducting the first inspection."
+marketing_angle: |
+  Port state control inspections and Samgöngustofa audits can result in vessel
+  detention if deficiencies cannot be proven to have been identified and
+  corrected. Tero.Ops digital inspections create an unbroken chain of evidence
+  from finding to fix — with timestamped photos, automatic task creation, and
+  one-click audit reports. For Icelandic fishing companies, this is the difference
+  between a confident audit and an anxious one. The offline-capable mobile app
+  means inspections happen on the vessel at the right moment, not later from
+  memory at a desk.
+meta_block:
+  complexity: major
+  content_types:
+    - kb
+    - training
+    - tooltip
+    - marketing
+  industry_relevance_score: 10

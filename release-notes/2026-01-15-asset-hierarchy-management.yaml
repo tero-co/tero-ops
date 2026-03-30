@@ -1,0 +1,48 @@
+# Release Note: Asset Hierarchy Management
+# Submitted: 2026-01-15
+# Engineer: Tero Engineering
+
+feature_name: "Asset Hierarchy Management"
+release_version: "2026.1"
+user_role: "technical_manager"
+screens_affected:
+  - "Assets/Fleet Overview"
+  - "Assets/Vessel/Equipment Tree"
+what_changed: |
+  Tero.Ops now supports fully hierarchical tracking of every physical asset
+  across the fleet — from the vessel itself down to individual sub-components
+  like pumps, seals, and sensors. The asset tree supports unlimited nesting
+  (vessel → engine → pump → seal) with a live breadcrumb navigation bar and
+  collapsible tree views for fast orientation. Each node in the tree carries its
+  complete maintenance history, linked spare parts, and a generated QR code that
+  crew can scan on-site to pull up the asset record instantly. Parent-child
+  relationships are enforced throughout: work orders, meter readings, and
+  inspection findings automatically attach to the correct asset level.
+user_impact: |
+  Technical managers can now see the full mechanical picture of every vessel in a
+  single structured view instead of hunting across spreadsheets or paper manuals.
+  When a job is logged against a sub-component, it surfaces in the parent asset's
+  history too — so nothing is missed at annual surveys or classification society
+  audits. QR codes on equipment mean engineers in the engine room can open the
+  right asset record in seconds, reducing errors when logging work. Spare parts
+  linked at the component level make it easy to initiate a procurement request
+  directly from the asset page without switching systems.
+where_in_system: "Assets > Fleet Overview, and Assets > [Vessel] > Equipment Tree"
+required_user_actions: "None — feature is enabled by default. Import existing asset register via Settings > Import > Assets CSV to populate the tree."
+marketing_angle: |
+  For Icelandic fishing companies managing multi-vessel fleets, asset hierarchy
+  management eliminates the gap between what is on paper and what is actually
+  installed on the vessel. Every component is traceable, every maintenance event
+  is attributed, and every QR code scan gives the crew the right information at
+  the right moment — even in the engine room with no connectivity. Classification
+  society surveyors and Samgöngustofa inspectors can follow a clear chain of
+  custody for every piece of equipment, reducing survey prep time from days to
+  hours.
+meta_block:
+  complexity: major
+  content_types:
+    - kb
+    - training
+    - tooltip
+    - marketing
+  industry_relevance_score: 10

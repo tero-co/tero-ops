@@ -1,0 +1,47 @@
+# Release Note: Offline-First Mobile App
+# Submitted: 2026-01-15
+# Engineer: Tero Engineering
+
+feature_name: "Offline-First Mobile App"
+release_version: "2026.1"
+user_role: "crew_member"
+screens_affected:
+  - "All screens (mobile app)"
+what_changed: |
+  The Tero.Ops mobile app — available for iOS and Android, built on Capacitor 6.x
+  — now operates fully offline. All data scoped to the user's vessel and
+  permissions is stored locally on-device with encrypted storage, so crew can
+  log work orders, complete checklists, record meter readings, and attach photos
+  with no internet connection. When connectivity returns — in port, on a WiFi
+  network, or via satellite — the app automatically syncs all changes back to
+  the cloud without any manual action required. Data access is scoped strictly to
+  the user's assigned vessels and role permissions, so crew on one vessel cannot
+  see data from another.
+user_impact: |
+  Crew members working in areas with no connectivity — engine rooms, remote
+  fishing grounds, Norwegian fjords — can now do everything in the app that they
+  would do onshore. Work logs, inspection checklists, and meter readings no longer
+  get written on paper and re-entered later. Encrypted on-device storage means
+  sensitive fleet data is protected even if a device is lost or stolen. The sync
+  process is fully automatic and conflict-aware, so crew do not need to think
+  about whether their data has been uploaded — the app handles it the moment a
+  connection is available.
+where_in_system: "All screens — accessible via the Tero.Ops iOS or Android app"
+required_user_actions: "Download the Tero.Ops app from the App Store or Google Play and log in with existing credentials. No configuration required."
+marketing_angle: |
+  A fleet management system is only as good as the data crew actually enter, and
+  crew won't enter data if it requires a stable internet connection at sea.
+  Tero.Ops offline-first mobile makes the system as usable in the middle of the
+  North Atlantic as it is in the office. For Icelandic fishing companies, where
+  vessels operate far from reliable connectivity for days at a time, this is the
+  difference between a system that works for the crew and one that gets ignored.
+  Every log entry, checklist completion, and meter reading is captured at the
+  moment it happens — not hours later from memory.
+meta_block:
+  complexity: major
+  content_types:
+    - kb
+    - training
+    - tooltip
+    - marketing
+  industry_relevance_score: 10

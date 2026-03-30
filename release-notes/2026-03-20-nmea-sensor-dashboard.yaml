@@ -1,0 +1,38 @@
+# Release Note: NMEA Sensor Dashboard
+# Submitted: 2026-03-20
+# Engineer: Tero Engineering
+# Purpose: TEST FILE for pipeline validation
+
+feature_name: "NMEA Sensor Dashboard"
+release_version: "2026.7"
+user_role: "technical_manager"
+screens_affected:
+  - "Assets/Vessel/Sensors"
+  - "Dashboard/Sensor Overview"
+what_changed: |
+  New real-time sensor dashboard showing live NMEA 2000 data from
+  vessel sensors. Displays engine RPM, fuel consumption, sea temperature,
+  GPS position, and wind speed in a unified view. Alerts trigger
+  automatically when readings exceed configurable thresholds. Historical
+  data stored for 90 days with CSV export.
+user_impact: |
+  Technical managers can now monitor all vessel sensor data from one
+  screen instead of switching between separate instrument panels.
+  Threshold alerts mean critical conditions (overheating engines, fuel
+  leaks, weather changes) are caught immediately — even when the
+  vessel is at sea and crew is occupied with operations.
+where_in_system: "Assets > [Vessel] > Sensors tab, and Dashboard > Sensor Overview"
+required_user_actions: "Vessel must have NMEA 2000 gateway configured in Settings > Integrations"
+marketing_angle: |
+  Turns every vessel into a connected asset. Fleet managers get
+  real-time visibility across their entire fleet from shore. Reduces
+  unplanned downtime by catching engine issues before they become
+  failures. A must-have for companies managing 10+ vessels.
+meta_block:
+  complexity: major
+  content_types:
+    - kb
+    - training
+    - tooltip
+    - marketing
+  industry_relevance_score: 10

@@ -1,0 +1,53 @@
+# Release Note: Compliance Reporting
+# Submitted: 2026-01-15
+# Engineer: Tero Engineering
+
+feature_name: "Compliance Reporting"
+release_version: "2026.1"
+user_role: "compliance_officer"
+screens_affected:
+  - "Compliance/Dashboard"
+  - "Compliance/Reports"
+  - "Compliance/Gap Analysis"
+what_changed: |
+  Tero.Ops now includes an automated compliance reporting module that aggregates
+  vessel logs, inspection records, maintenance history, drill records, and crew
+  certifications into structured reports aligned with ISM Code requirements.
+  A gap analysis engine continuously evaluates the fleet against compliance
+  requirements — identifying missing documentation, expired certificates, and
+  overdue drills — and surfaces findings on a dedicated dashboard with
+  red/amber/green status indicators. One-click report generation produces
+  audit-ready documents for Samgöngustofa inspections and IMO submissions.
+  A full audit trail records every compliance event with timestamp, responsible
+  party, and supporting evidence, creating an unbroken chain of accountability
+  across the fleet.
+user_impact: |
+  Compliance officers previously spent days before an audit manually pulling
+  records from multiple systems to assemble a compliance package. Tero.Ops
+  compliance reporting generates the same package in minutes by drawing on data
+  already in the system — maintenance logs, inspection findings, crew certs, and
+  drill records. The gap analysis dashboard means compliance gaps are surfaced
+  continuously, not discovered the night before an inspection. Reports are
+  formatted to match Samgöngustofa and IMO audit requirements, so there is no
+  manual reformatting step. The audit trail gives inspectors immediate access to
+  the evidence behind every compliance claim, reducing back-and-forth during
+  inspections.
+where_in_system: "Compliance > Dashboard, Compliance > Reports, and Compliance > Gap Analysis"
+required_user_actions: "None — feature is enabled by default. Configure compliance requirements and reporting periods in Compliance > Settings to match your ISM SMS documentation structure."
+marketing_angle: |
+  ISM Code compliance is a legal requirement for every Icelandic commercial
+  vessel, and failing an audit can result in detention, insurance complications,
+  or loss of operating certificate. Tero.Ops compliance reporting turns
+  compliance from a reactive scramble into a continuous process — with real-time
+  gap analysis, one-click audit reports, and an audit trail that stands up to
+  Samgöngustofa scrutiny. Fleet operators who have shifted to Tero.Ops no longer
+  dread audit season because the evidence is always ready, always current, and
+  always accessible.
+meta_block:
+  complexity: major
+  content_types:
+    - kb
+    - training
+    - tooltip
+    - marketing
+  industry_relevance_score: 10

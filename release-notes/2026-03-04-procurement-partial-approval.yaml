@@ -1,0 +1,34 @@
+# Release Note: Procurement Partial Approval
+# Submitted: 2026-03-04
+# Engineer: Tero Engineering
+
+feature_name: "Procurement Partial Approval"
+release_version: "2026.5"
+user_role: "procurement_officer"
+screens_affected:
+  - "Procurement/Orders"
+  - "Procurement/Orders/LineItems"
+what_changed: |
+  Engineers can now approve individual line items within a purchase order
+  rather than requiring full-order approval. Each line item has its own
+  approval status and can be processed independently.
+user_impact: |
+  Procurement officers can process partial deliveries without blocking
+  the full order workflow. When a vessel receives some but not all ordered
+  parts, the received items can be approved and tracked while awaiting
+  the remaining items.
+where_in_system: "Procurement > Orders > Line Item Actions"
+required_user_actions: "None — feature is enabled by default"
+marketing_angle: |
+  Reduces procurement processing time for partial deliveries in fleet
+  maintenance contexts. Fishing vessels often receive parts at different
+  ports — this eliminates the bottleneck of waiting for complete orders.
+meta_block:
+  complexity: medium
+  content_types:
+    - kb
+    - training
+    - support_qa
+    - tooltip
+    - marketing
+  industry_relevance_score: 8

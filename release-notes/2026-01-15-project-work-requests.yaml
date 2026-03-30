@@ -1,0 +1,50 @@
+# Release Note: Projects & Work Requests
+# Submitted: 2026-01-15
+# Engineer: Tero Engineering
+
+feature_name: "Projects & Work Requests"
+release_version: "2026.1"
+user_role: "technical_manager"
+screens_affected:
+  - "Projects/Overview"
+  - "Projects/Work Requests"
+what_changed: |
+  Tero.Ops introduces a Projects module that groups related work requests into
+  named projects — such as a drydock overhaul, a refit campaign, or a seasonal
+  equipment upgrade. Each project carries a status of PLANNING, ACTIVE,
+  COMPLETED, or CANCELLED, and contains individual work requests that move
+  through an 8-state workflow: UNASSIGNED → ASSIGNED → NOT_STARTED → PENDING →
+  IN_PROGRESS → DELAYED → COMPLETED → CANCELLED. Work requests support
+  contractor assignment alongside internal crew, priority classification, and
+  full comment and document attachment. Technical managers can view all active
+  work across a project in a single list, filtered by status, priority, or
+  assignee, giving a real-time picture of drydock or overhaul progress.
+user_impact: |
+  Technical managers overseeing complex maintenance campaigns — such as a
+  60-day drydock with dozens of concurrent work packages — can now manage all
+  work in one structured place instead of tracking progress across emails, phone
+  calls, and whiteboards. The DELAYED status makes it explicit when a work
+  request has slipped its expected completion, prompting early escalation before
+  the entire project timeline is affected. Contractor assignment means external
+  suppliers and yards are tracked in the same workflow as internal crew, with
+  full accountability for who is responsible for each item. Project-level
+  dashboards give management a clear view of what is done, in progress, and
+  blocked — without needing status meetings.
+where_in_system: "Projects > Overview, and Projects > Work Requests"
+required_user_actions: "None — feature is enabled by default. Create a new project via Projects > Overview > New Project and add work requests individually or via bulk import."
+marketing_angle: |
+  Drydock periods are the highest-cost, highest-risk events in a vessel's
+  operating calendar. Tero.Ops Projects gives technical managers the structure to
+  plan every work package, assign it to the right person or contractor, and track
+  it through to completion — with full visibility into what is delayed and why.
+  For Icelandic fishing companies managing drydocks at Icelandic or European
+  yards, this means fewer surprises, tighter cost control, and vessels back in
+  the water on schedule.
+meta_block:
+  complexity: major
+  content_types:
+    - kb
+    - training
+    - tooltip
+    - marketing
+  industry_relevance_score: 9

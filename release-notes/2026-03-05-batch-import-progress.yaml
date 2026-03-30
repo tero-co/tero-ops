@@ -1,0 +1,38 @@
+# Release Note: Batch Import with Progress Tracking
+# Submitted: 2026-03-05
+# Engineer: Tero Engineering
+# Purpose: TEST FILE for pipeline validation
+
+feature_name: "Batch Import with Progress Tracking"
+release_version: "2026.6"
+user_role: "fleet_manager"
+screens_affected:
+  - "Settings/Import"
+  - "Settings/Import/History"
+what_changed: |
+  Users can now import up to 50,000 records at once with real-time
+  progress tracking. The import engine processes records in chunks of
+  1,000 using PostgreSQL COPY for maximum throughput. Failed rows are
+  collected into a downloadable error report rather than stopping the
+  entire import.
+user_impact: |
+  Fleet managers importing vessel maintenance records, crew certifications,
+  or spare parts inventories no longer need to split large CSV files into
+  small batches manually. The new progress bar shows exactly how many
+  records have been processed and estimated time remaining.
+where_in_system: "Settings > Import > Upload CSV"
+required_user_actions: "None — replaces the old single-file import"
+marketing_angle: |
+  Reduces import time by 80% for large datasets. Maritime companies
+  managing hundreds of vessels can now onboard their entire fleet
+  maintenance history in minutes instead of hours. This is a major
+  productivity win for operations teams switching from spreadsheets
+  to Tero.
+meta_block:
+  complexity: major
+  content_types:
+    - kb
+    - training
+    - tooltip
+    - marketing
+  industry_relevance_score: 9

@@ -1,0 +1,42 @@
+# Release Note: Maintenance Scheduling v2
+# Submitted: 2026-03-20
+# Engineer: Tero Engineering
+# Purpose: TEST FILE for pipeline validation
+
+feature_name: "Maintenance Scheduling v2"
+release_version: "2026.7"
+user_role: "fleet_manager"
+screens_affected:
+  - "Maintenance/Schedule"
+  - "Maintenance/Work Orders"
+  - "Assets/Vessel/Maintenance"
+what_changed: |
+  Complete rebuild of the maintenance scheduling engine. Now supports
+  condition-based maintenance triggers from NMEA sensor data (e.g.,
+  schedule oil change when engine hours reach threshold). Drag-and-drop
+  calendar view for planning maintenance windows around fishing seasons.
+  Automatic work order generation with parts list from the spare parts
+  inventory. Multi-vessel scheduling to coordinate dry-dock slots.
+user_impact: |
+  Fleet managers can now plan maintenance around vessel availability
+  instead of rigid time intervals. The system suggests optimal
+  maintenance windows based on sensor data, fishing season calendars,
+  and dry-dock availability. Work orders are pre-populated with the
+  right spare parts — reducing preparation time from hours to minutes.
+where_in_system: "Maintenance > Schedule, and Maintenance > Work Orders"
+required_user_actions: "Review and confirm auto-generated maintenance plans in Maintenance > Schedule"
+marketing_angle: |
+  Moves fleet maintenance from calendar-based to condition-based —
+  the industry standard for modern asset management. Fishing companies
+  save 15-20% on maintenance costs by servicing equipment when it
+  actually needs it, not on a fixed schedule. Integration with NMEA
+  sensors makes this the first EAM system built specifically for
+  maritime condition-based maintenance.
+meta_block:
+  complexity: major
+  content_types:
+    - kb
+    - training
+    - tooltip
+    - marketing
+  industry_relevance_score: 10

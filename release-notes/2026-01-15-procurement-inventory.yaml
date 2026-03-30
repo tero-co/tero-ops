@@ -1,0 +1,52 @@
+# Release Note: Procurement & Inventory Management
+# Submitted: 2026-01-15
+# Engineer: Tero Engineering
+
+feature_name: "Procurement & Inventory Management"
+release_version: "2026.1"
+user_role: "procurement_officer"
+screens_affected:
+  - "Procurement/Inventory"
+  - "Procurement/Orders"
+  - "Procurement/Requests"
+what_changed: |
+  Tero.Ops now covers the full procurement cycle end-to-end: from inventory
+  request through purchase order creation, supplier dispatch, and receipt —
+  including partial deliveries. Stock items carry configurable minimum, maximum,
+  and reorder thresholds, and the system automatically flags items as In Stock,
+  Low Stock, or No Stock based on current levels. Purchase orders move through a
+  clear status workflow: OPEN → SENT_TO_SUPPLIER → PARTIALLY_RECEIVED →
+  RECEIVED, with each transition recorded for audit. Partial receipt support
+  means a delivery of 8 out of 10 ordered parts is logged accurately, with the
+  remaining 2 tracked as outstanding rather than lost in a manual follow-up
+  process.
+user_impact: |
+  Procurement officers have a single place to manage all stock requests from
+  vessels, issue purchase orders, and track deliveries — replacing email threads
+  and spreadsheets that made it hard to know what was ordered, what arrived, and
+  what was still outstanding. Low Stock and No Stock alerts surface before
+  critical items run out, giving procurement teams time to reorder before a
+  vessel needs a part urgently. Partial receipt tracking prevents the common
+  problem of closing an order when only part of the delivery arrived, which
+  previously caused stock levels to be reported as higher than they actually were.
+  All order history is retained for supplier performance review and budget
+  reporting.
+where_in_system: "Procurement > Inventory, Procurement > Orders, and Procurement > Requests"
+required_user_actions: "None — feature is enabled by default. Populate the initial stock catalogue via Settings > Import > Inventory CSV and configure min/max thresholds per item."
+marketing_angle: |
+  For Icelandic fishing companies, a vessel delayed in port waiting for a spare
+  part costs far more than any procurement inefficiency. Tero.Ops procurement and
+  inventory management keeps stock levels visible across the fleet, routes
+  requests through a trackable approval and order process, and handles the
+  complexity of partial deliveries from suppliers — all in one system. Fleet
+  operators gain full visibility from request to receipt, with automatic
+  reorder alerts that prevent the stock-outs that cause unplanned delays and
+  expensive emergency sourcing.
+meta_block:
+  complexity: major
+  content_types:
+    - kb
+    - training
+    - tooltip
+    - marketing
+  industry_relevance_score: 9

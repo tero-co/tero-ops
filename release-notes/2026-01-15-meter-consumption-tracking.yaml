@@ -1,0 +1,52 @@
+# Release Note: Meter & Consumption Tracking
+# Submitted: 2026-01-15
+# Engineer: Tero Engineering
+
+feature_name: "Meter & Consumption Tracking"
+release_version: "2026.1"
+user_role: "technical_manager"
+screens_affected:
+  - "Assets/Vessel/Meters"
+  - "Dashboard/Consumption"
+what_changed: |
+  Tero.Ops now supports meter and consumption tracking for any measurable
+  quantity on a vessel — fuel, engine hours, fresh water, electricity, and
+  custom units. Meters are defined at the asset level with a name, unit, and
+  serial number, and linked directly to the asset they measure. Readings are
+  accepted via manual crew entry or from IoT sensor feeds, with values stored
+  as high-precision BigDecimal strings to avoid rounding errors in critical
+  measurements. When a meter reading crosses a configured threshold, the system
+  automatically triggers the relevant maintenance job — closing the loop between
+  consumption data and the preventive maintenance schedule. A consumption
+  dashboard aggregates readings across the fleet, enabling comparison of fuel
+  efficiency and utilisation across vessels over time.
+user_impact: |
+  Technical managers gain accurate, timestamped meter data without relying on
+  crew to remember or manually transcribe readings from paper logs. Threshold
+  crossings that trigger maintenance jobs mean the preventive maintenance
+  schedule is driven by actual usage rather than calendar estimates — a vessel
+  fishing more intensively than planned will have its 500-hour service triggered
+  at the right time rather than too early or too late. The fleet-wide consumption
+  dashboard makes it easy to spot anomalies: a vessel burning significantly more
+  fuel than its sister ships may indicate a mechanical issue before it becomes a
+  breakdown. IoT sensor integration reduces manual data entry burden on crew and
+  improves reading frequency and accuracy.
+where_in_system: "Assets > [Vessel] > Meters, and Dashboard > Consumption"
+required_user_actions: "None — feature is enabled by default. Define meters in Assets > [Vessel] > Meters and configure maintenance trigger thresholds in Maintenance > Schedules."
+marketing_angle: |
+  Fuel is the largest variable cost for Icelandic fishing vessels, and engine
+  hours determine when expensive maintenance is required. Tero.Ops meter and
+  consumption tracking turns raw readings into actionable data — automatically
+  triggering maintenance at the right threshold, flagging unusual consumption
+  patterns, and giving fleet managers a dashboard that shows how each vessel is
+  performing over time. Whether readings come from crew entry or IoT sensors,
+  the data feeds directly into the maintenance and compliance systems, eliminating
+  the manual work of connecting consumption data to operational decisions.
+meta_block:
+  complexity: medium
+  content_types:
+    - kb
+    - training
+    - tooltip
+    - marketing
+  industry_relevance_score: 8
